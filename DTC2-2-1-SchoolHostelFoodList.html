@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title> Exercise 2.1 - Basic Lists </title>
+	<style>
+		body {background-color: #aaf2bd; margin: 20%;}
+	</style>
+</head>
+<body>
+	<h1> Welcome to the Fiordland Girls' High School Hostel's Website!!! </h1>
+
+	<button type="button" id="the-button">Reveal this week's food menu</button>
+	
+	<table>
+	  <tr>
+		<th>Day</th>
+		<th>Food</th>
+	  </tr>
+	  <tr>
+		<td>Monday</td>
+		<td id="monday-gap">???</td>
+	  </tr>
+	  <tr>
+		<td>Tuesday</td>
+		<td id="tuesday-gap">???</td>
+	  </tr>
+	  <tr>
+		<td>Wednesday</td>
+		<td id="wednesday-gap">???</td>
+	  </tr>
+	  <tr>
+		<td>Thursday</td>
+		<td id="thursday-gap">???</td>
+	  </tr>
+	  <tr>
+		<td>Friday</td>
+		<td id="friday-gap">???</td>
+	  </tr>
+	</table>
+
+</body>
+<script>
+	const menu = ["Lasagna", "Butter Chicken", "Mexican Wraps", "Roast Chicken", "Corn on the Cob"]
+	
+	document.getElementById("the-button").addEventListener("click", revealMenu);
+	function revealMenu(){
+		document.getElementById("monday-gap").innerHTML = menu[0];
+	}
+
+</script>

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title> Exercise 1.2 - Input Output </title>
+	<style>
+		body {background-color: #aaf2bd; margin: 20%;}
+	</style>
+</head>
+<body>
+	
+
+	<label for="age">Age: </label>
+	<input type="text" id="your-age" name="age">
+	<br> <br> <br>
+
+	<button type="button" id="the-button">Go to nightclub</button>
+	
+	<div id="answer-box">
+		
+	</div>
+</body>
+<script>
+	document.getElementById("the-button").addEventListener("click", checkNightclub);
+	function checkNightclub() {
+		var age = document.getElementById("your-age").value;
+		if (age >= 18) {
+			document.getElementById("answer-box").innerHTML = "Come on in! Let me take your coat";
+		} else {
+			document.getElementById("answer-box").innerHTML = "You are not old enough to enter this nightclub. Scram!";
+		}
+	} 
+</script>
